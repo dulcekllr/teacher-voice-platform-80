@@ -18,6 +18,30 @@ const Schedule = () => {
     },
   ];
 
+  // Function to check if a date has an event
+  const hasEvent = (day: Date) => {
+    return events.some(
+      (event) =>
+        event.date.getDate() === day.getDate() &&
+        event.date.getMonth() === day.getMonth() &&
+        event.date.getFullYear() === day.getFullYear()
+    );
+  };
+
+  // Custom modifiers for the calendar
+  const modifiers = {
+    hasEvent: (date: Date) => hasEvent(date),
+  };
+
+  // Custom modifier styles
+  const modifiersStyles = {
+    hasEvent: {
+      backgroundColor: "#9b87f5",
+      color: "white",
+      borderRadius: "50%",
+    },
+  };
+
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
@@ -29,6 +53,8 @@ const Schedule = () => {
               selected={date}
               onSelect={setDate}
               className="rounded-md border shadow-md"
+              modifiers={modifiers}
+              modifiersStyles={modifiersStyles}
             />
           </div>
           <div>
