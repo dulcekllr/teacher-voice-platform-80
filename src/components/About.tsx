@@ -9,15 +9,13 @@ export const About = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 animate-slide-up">
-            <p className="text-lg leading-relaxed text-gray-700">
-              As an aspiring KUPPET Executive Secretary, Godwin Mshila has emerged as a beacon of hope
-              for reform and justice in the teaching profession. His unwavering commitment to
-              teachers' welfare and rights has made him the voice of change in Kwale County.
-            </p>
-            <p className="text-lg leading-relaxed text-gray-700">
-              Through initiatives like the Godwin Mshila Foundation, he has demonstrated his
-              dedication to empowering teachers and creating positive change in the education sector.
-            </p>
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-6 md:mb-0">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                alt="Godwin Mshila"
+                className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+              />
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Card className="p-6 bg-secondary hover:shadow-lg transition-shadow">
@@ -36,6 +34,19 @@ export const About = () => {
               <h3 className="font-bold text-xl mb-2 text-primary">Experience</h3>
               <p className="text-gray-600">Years of dedicated service in education leadership</p>
             </Card>
+          </div>
+        </div>
+        <div className="mt-8">
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed text-gray-700">
+              As an aspiring KUPPET Executive Secretary, Godwin Mshila has emerged as a beacon of hope
+              for reform and justice in the teaching profession. His unwavering commitment to
+              teachers' welfare and rights has made him the voice of change in Kwale County.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700">
+              Through initiatives like the Godwin Mshila Foundation, he has demonstrated his
+              dedication to empowering teachers and creating positive change in the education sector.
+            </p>
           </div>
         </div>
       </div>
