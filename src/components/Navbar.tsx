@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Calendar, Home, Newspaper, User2, Briefcase } from "lucide-react";
+import { Calendar, Home, Newspaper, User2, Briefcase, Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export const Navbar = () => {
   return (
@@ -7,6 +8,8 @@ export const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="font-bold text-xl text-primary">Godwin Mshila</Link>
+          
+          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <Link to="/" className="flex items-center space-x-2 text-gray-600 hover:text-primary transition-colors">
               <Home className="w-4 h-4" />
@@ -29,6 +32,37 @@ export const Navbar = () => {
               <span>Schedule</span>
             </Link>
           </div>
+
+          {/* Mobile Navigation */}
+          <Sheet>
+            <SheetTrigger className="md:hidden p-2">
+              <Menu className="h-6 w-6" />
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <nav className="flex flex-col space-y-4 mt-6">
+                <Link to="/" className="flex items-center space-x-2 text-gray-600 hover:text-primary transition-colors p-2">
+                  <Home className="w-5 h-5" />
+                  <span>Home</span>
+                </Link>
+                <Link to="/about" className="flex items-center space-x-2 text-gray-600 hover:text-primary transition-colors p-2">
+                  <User2 className="w-5 h-5" />
+                  <span>About</span>
+                </Link>
+                <Link to="/projects" className="flex items-center space-x-2 text-gray-600 hover:text-primary transition-colors p-2">
+                  <Briefcase className="w-5 h-5" />
+                  <span>Projects</span>
+                </Link>
+                <Link to="/blog" className="flex items-center space-x-2 text-gray-600 hover:text-primary transition-colors p-2">
+                  <Newspaper className="w-5 h-5" />
+                  <span>Blog</span>
+                </Link>
+                <Link to="/schedule" className="flex items-center space-x-2 text-gray-600 hover:text-primary transition-colors p-2">
+                  <Calendar className="w-5 h-5" />
+                  <span>Schedule</span>
+                </Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
