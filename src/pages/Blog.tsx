@@ -1,27 +1,32 @@
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 
+import PartnershipImage from "../img/building-partnerships-for-education.jpeg"
+import ConnectingImage from "../img/connecting-with-teachers.jpeg"
+import FightingImage from "../img/fight-for-rights.jpeg"
+import leadingImage from "../img/leading-with-vision.jpeg"
+
 const posts = [
   {
     id: "leading-from-front",
     title: "Leading from the Front",
     excerpt: "Godwin Mshila's vision for transforming KUPPET leadership",
     date: "March 15, 2024",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+    image: PartnershipImage
   },
   {
     id: "teachers-welfare",
     title: "Teachers' Welfare First",
     excerpt: "New initiatives to support and empower educators",
     date: "March 10, 2024",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+    image: ConnectingImage
   },
   {
     id: "better-schools",
     title: "Building Better Schools",
     excerpt: "Community engagement and educational development",
     date: "March 5, 2024",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b"
+    image: FightingImage
   },
 ];
 

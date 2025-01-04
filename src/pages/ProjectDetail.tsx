@@ -2,13 +2,18 @@ import { useParams } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
+import PartnershipImage from "../img/building-partnerships-for-education.jpeg"
+import ConnectingImage from "../img/connecting-with-teachers.jpeg"
+import FightingImage from "../img/fight-for-rights.jpeg"
+import leadingImage from "../img/leading-with-vision.jpeg"
+
 const projects = {
   "teacher-training": {
     title: "Teacher Training Programs",
     description: "Professional development initiatives for educators in Kwale County",
     date: "2024",
     fullDescription: "Our comprehensive teacher training programs focus on enhancing pedagogical skills, technology integration, and professional development. Through workshops, seminars, and hands-on training sessions, we empower educators to excel in their roles and adapt to modern teaching methods.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: PartnershipImage,
     gallery: [
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
@@ -20,7 +25,7 @@ const projects = {
     description: "Mentorship and training programs for student leaders",
     date: "2024",
     fullDescription: "Our student leadership initiative aims to nurture the next generation of leaders through structured mentorship programs, leadership workshops, and practical experience in school governance. We believe in empowering students to become effective leaders in their communities.",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+    image: ConnectingImage,
     gallery: [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
       "https://images.unsplash.com/photo-1518770660439-4636190af475",
@@ -32,7 +37,7 @@ const projects = {
     description: "Building bridges between schools and local communities",
     date: "2024",
     fullDescription: "Through our community engagement programs, we create meaningful connections between schools and their surrounding communities. This initiative focuses on collaborative projects, community service, and educational partnerships that benefit both teachers and local residents.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: FightingImage,
     gallery: [
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",

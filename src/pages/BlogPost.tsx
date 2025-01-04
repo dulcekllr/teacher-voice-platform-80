@@ -1,6 +1,12 @@
 import { useParams } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import PartnershipImage from "../img/building-partnerships-for-education.jpeg"
+import ConnectingImage from "../img/connecting-with-teachers.jpeg"
+import FightingImage from "../img/fight-for-rights.jpeg"
+import leadingImage from "../img/leading-with-vision.jpeg"
+
+
 
 const posts = {
   "leading-from-front": {
@@ -8,7 +14,7 @@ const posts = {
     excerpt: "Godwin Mshila's vision for transforming KUPPET leadership",
     date: "March 15, 2024",
     content: "As we embark on this journey to transform KUPPET leadership, our vision is clear: to create a union that truly serves its members. Through innovative programs, transparent governance, and unwavering advocacy, we aim to build a stronger, more responsive organization that puts teachers first.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: PartnershipImage,
     gallery: [
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
@@ -19,7 +25,7 @@ const posts = {
     excerpt: "New initiatives to support and empower educators",
     date: "March 10, 2024",
     content: "Our commitment to teachers' welfare goes beyond words. We're implementing comprehensive support systems, including health benefits, professional development opportunities, and financial planning assistance. Every teacher deserves to feel secure and valued in their profession.",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+    image: ConnectingImage,
     gallery: [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
       "https://images.unsplash.com/photo-1518770660439-4636190af475"
@@ -30,7 +36,7 @@ const posts = {
     excerpt: "Community engagement and educational development",
     date: "March 5, 2024",
     content: "Creating better schools requires a collaborative approach. We're working with communities, parents, and educational stakeholders to improve infrastructure, enhance learning environments, and provide the resources needed for quality education.",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
+    image: FightingImage,
     gallery: [
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"

@@ -1,11 +1,12 @@
 import { Button } from "./ui/button";
+import HeroImage from "../img/hero-img.jpeg"
 
 export const Hero = () => {
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center px-4">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
+          src={HeroImage}
           alt="Campaign Background"
           className="w-full h-full object-cover"
         />

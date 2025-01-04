@@ -1,24 +1,28 @@
 import { Card } from "./ui/card";
+import PartnershipImage from "../img/building-partnerships-for-education.jpeg"
+import ConnectingImage from "../img/connecting-with-teachers.jpeg"
+import FightingImage from "../img/fight-for-rights.jpeg"
+import leadingImage from "../img/leading-with-vision.jpeg"
 
 export const Gallery = () => {
   const images = [
     {
-      src: "/placeholder.svg",
+      src: PartnershipImage,
       alt: "Godwin Mshila speaking at a teachers' conference",
       caption: "Leading with Vision: Addressing Teachers' Concerns"
     },
     {
-      src: "/placeholder.svg",
+      src: ConnectingImage,
       alt: "Godwin Mshila with community leaders",
       caption: "Building Partnerships for Education"
     },
     {
-      src: "/placeholder.svg",
+      src: FightingImage,
       alt: "Godwin Mshila at a school visit",
       caption: "Connecting with Teachers on the Ground"
     },
     {
-      src: "/placeholder.svg",
+      src: leadingImage,
       alt: "Godwin Mshila at a KUPPET event",
       caption: "Fighting for Teachers' Rights"
     }

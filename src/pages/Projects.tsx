@@ -1,27 +1,33 @@
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 
+import PartnershipImage from "../img/building-partnerships-for-education.jpeg"
+import ConnectingImage from "../img/connecting-with-teachers.jpeg"
+import FightingImage from "../img/fight-for-rights.jpeg"
+import leadingImage from "../img/leading-with-vision.jpeg"
+
+
 const projects = [
   {
     id: "teacher-training",
     title: "Teacher Training Programs",
     description: "Professional development initiatives for educators in Kwale County",
     date: "2024",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+    image: PartnershipImage
   },
   {
     id: "student-leadership",
     title: "Student Leadership Development",
     description: "Mentorship and training programs for student leaders",
     date: "2024",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+    image: ConnectingImage
   },
   {
     id: "community-engagement",
     title: "Community Engagement",
     description: "Building bridges between schools and local communities",
     date: "2024",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b"
+    image: FightingImage
   },
 ];
 

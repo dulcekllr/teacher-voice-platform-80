@@ -1,4 +1,5 @@
 import { Card } from "./ui/card";
+import PortfolioImage from "../img/portfolio.jpeg"
 
 export const About = () => {
   return (
@@ -13,9 +14,9 @@ export const About = () => {
           <div className="md:w-1/2">
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                src={PortfolioImage}
                 alt="Godwin Mshila"
-                className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full h-full justify-center hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
